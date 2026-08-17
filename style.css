@@ -135,6 +135,39 @@ footer { background-color: #111; color: #666; padding: 40px 0; font-size: 0.85re
 .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
 .animate-on-scroll.appear { opacity: 1; transform: translateY(0); }
 
+/* Impressum / Rechtliches */
+#impressum .legal-text {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid #e2e8f0;
+}
+
+#impressum h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+#impressum h3:first-of-type {
+    margin-top: 0;
+}
+
+#impressum p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
 /* Mobile Optimierungen & Responsive Design */
 @media (max-width: 992px) {
     .about-grid { grid-template-columns: 1fr; gap: 30px; }
@@ -155,4 +188,8 @@ footer { background-color: #111; color: #666; padding: 40px 0; font-size: 0.85re
     
     .section { padding: 60px 0; }
     .footer-content { flex-direction: column; text-align: center; }
+
+    #impressum .legal-text {
+        padding: 25px 20px;
+    }
 }
